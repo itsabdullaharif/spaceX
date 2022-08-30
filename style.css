@@ -2,8 +2,13 @@ body {
     margin: 0;
     padding: 0;
     font-size: 62.5%;
-    background: url(./img/background.jpg);
+    background: #283747;
 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -12,13 +17,30 @@ body {
     font-size: 9rem;
 }
 
+
 .img-cont {
     width: 20rem;
     margin: 0 auto;
     color: white;
 }
 
+/* seaerch Box */
+#searchBox {
+    margin-left: 33%;
+}
 
+.fa-search {
+    height: 4rem;
+    width: 4rem;
+}
+
+input {
+    width: 30rem;
+    height: 3rem;
+    border-radius: 5rem;
+}
+
+/* end of seach of box */
 #cardId {
 
     width: 80vw;
@@ -35,21 +57,20 @@ body {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 4rem;
-    width: 100%;
-    height: 45%;
-    row-gap: 4rem;
-    column-gap: 4rem;
-    background-color: white;
-    flex-wrap: wrap;
-    border: solid 2px white;
+    min-height: 40%;
+    flex-wrap: wrap !important;
+    /* border-radius: 2rem; */
+    background: white;
+    /* box-shadow: 5px 5px 30px 5px gray, 5px 5px 30px 5px white; */
+    color: black;
+    text-shadow: #000428;
 }
 
 .img {}
 
 .img img {
-    width: 20rem;
-    height: 20rem;
-    border-radius: 55rem;
+    width: 10rem;
+    height: 10rem;
     position: -webkit-sticky;
 
 }
@@ -59,6 +80,24 @@ body {
     flex-direction: column;
     width: 50%;
     height: 35%;
-    font-size: 1.8rem;
+    font-size: 1rem;
     align-self: center;
+}
+
+.btn {
+    border-radius: 5rem;
+    width: 10rem;
+    height: 3rem;
+    font-size: large;
+    font-weight: 800;
+}
+
+.detailsBox {
+    display: flex;
+    flex-direction: column;
+    column-gap: 2rem;
+}
+
+.link {
+    display: none;
 }
